@@ -1,5 +1,3 @@
-# zz-build-jpeg-recompress
-
 # jpeg-recompress
 ## build binary in docker
 ```
