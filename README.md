@@ -1,3 +1,15 @@
-# zz-builders
-
-[jpeg-recompress](jpeg-recompress/README.md)
+# zz-jpeg-recompress-builder - jpeg-recompress 2.2.ß
+## run binary in docker container
+```
+docker run --rm ghcr.io/realash82/zz-jpeg-recompress-bin --version
+```
+## extract binary from docker container
+```
+container_id=$(docker create ghcr.io/realash82/zz-jpeg-recompress-bin)
+docker cp "$container_id:/jpeg-recompress" bin/jpeg-recompress
+docker rm "$container_id"
+```
+## run binary
+```
+./bin/jpeg-recompress --version
+```
