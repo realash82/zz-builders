@@ -6,10 +6,10 @@ docker run --rm ghcr.io/realash82/zz-jpeg-recompress-bin --version
 ## extract binary from docker container
 ```
 container_id=$(docker create ghcr.io/realash82/zz-jpeg-recompress-bin)
-docker cp "$container_id:/jpeg-recompress" jpeg-recompress
+docker cp "$container_id:/jpeg-recompress" bin/jpeg-recompress
 docker rm "$container_id"
 ```
 ## run binary
 ```
-./jpeg-recompress --version
+./bin/jpeg-recompress --version
 ```
