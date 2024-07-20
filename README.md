@@ -1,4 +1,4 @@
-# zz-jpeg-recompress-builder - jpeg-recompress 2.2.ß
+# zz-jpeg-recompress-builder - jpeg-recompress 2.2.0
 ## run binary in docker container
 ```
 docker run --rm ghcr.io/realash82/zz-jpeg-recompress-bin --version
