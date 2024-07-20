@@ -1,15 +1,12 @@
-name: ci
+name: action
 on:
-  push:
-    branches:
-      - master
   workflow_dispatch:
 jobs:
-  docker:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - uses: docker/login-action@v1
+      - uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{github.actor}}
